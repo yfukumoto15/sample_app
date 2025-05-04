@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  url: <%= ENV['postgresql://sample_app_production_tsix_user:YuXfojmHddVsg4lmlDHF1TbDzuQ7b4VW@dpg-d0antv1r0fns73cnudk0-a/sample_app_production_tsix'] %>
