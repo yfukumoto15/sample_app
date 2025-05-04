@@ -42,6 +42,11 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
+  # クラウドIDEの場合は以下をお使いください
+  config.action_mailer.default_url_options = { host: 'fictional-space-potato-97q46vg9p7x427qx-3000.app.github.dev', protocol: 'https' }
+  # localhostで開発している場合は以下をお使いください
+  # config.action_mailer.default_url_options = { host: host, protocol: 'http' }
+  
   config.action_mailer.perform_caching = false
 
   # Print deprecation notices to the Rails logger.
